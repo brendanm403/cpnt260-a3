@@ -4,3 +4,10 @@
   }
 }
 
+/* tony said it was okay to use pixels for this size range */
+@media screen and (width > 800px) and (width < 936px) {
+  h1 {
+    font-size: 70px;
+  }
+}
+

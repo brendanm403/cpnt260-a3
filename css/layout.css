@@ -3,15 +3,49 @@ header {
   background-image: url(https://picsum.photos/id/184/2000/1500);
   background-size: cover;
   background-position: center;
-  display: flex;
-  justify-content: center;
+}
+
+article {
+  max-width: 20ch;
+  background-color: transparent;
+  border: 3px solid rgb(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 0 1rem;
+  text-align: center;
 }
 
 h1 {
-  margin: 1rem;
+  padding: 1rem;
   max-width: 18ch;
   text-align: center;
   color: #fff;
-  
+  margin: 0;
 }
 
+.cards-flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.card-image {
+  display: block;
+  width: 30%;
+  margin: auto;
+}
+
+.card-text {
+  margin: 0;
+}
+
+.card-title-day {
+  color: hsl(48, 100%, 50%);
+  margin: 0;
+}
+
+.card-title-night {
+  color: hsl(240, 100%, 72%);
+  margin: 0;
+}
