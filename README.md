@@ -9,7 +9,7 @@ https://brendanm403.github.io/cpnt260-a3/
 
 - When inspecting the text for contrast ratio you'll notice firefox will tell you that its calculating the value against a white background if you inspect the h2. Instead, if you inspect the anchor element inside the h2, uncheck the `color: inherit` property, and then inspect the color in the .card-title-day/.card-title-night classes it will show you the contrast value calculated against the correct background color.
 
--I added a smidge of js, all it does is change the little image in each card.
+- I added a smidge of js, all it does is change the little image in each card.
 
 ## Helpful Article
 - [shecodes](https://www.shecodes.io/athena/3020-how-to-use-hover-to-expand-a-button-in-css)
