@@ -12,8 +12,6 @@ header {
 
 /* hero title */
 h1 {
-  text-align: center;
-  
   margin: 0 auto;
   max-width: 18ch;
   padding: 1rem;
@@ -22,11 +20,9 @@ h1 {
   filter: drop-shadow(0 0 1rem hsl(224, 95%, 78%));
 }
 
-/* morning and evening cards */
+/* morning and evening card content containers */
 article {
   background-color: transparent;
-  
-  text-align: center;
   
   margin: 0 1rem 1rem 1rem;
   max-width: 20ch;
@@ -38,9 +34,7 @@ article {
 
 /* placeholder text to show where hero section ends */
 section h2 {
-  text-align: center;
-  
-  margin : 1rem auto;
+  margin : 2rem auto;
   max-width: 20ch;
 
   color: #000;
@@ -50,16 +44,15 @@ section p {
   margin: auto;
   max-width: 70ch;
   padding: 1rem;
-  
+  text-align: left;
   color: #000;
 }
 
 /**** class selectors ****/
 
-
+/* flex box to configure card layout on screen */
 .cards-flex-container {
   display: flex;
-  /* margin-top: 1rem; */
   padding: 1rem 0 1rem 0;
   
   align-items: center;
@@ -76,7 +69,7 @@ section p {
   margin: 1rem 0;
 }
 
-/* leave comment about the contrast ratio being calced against white background even though not white" */
+/* cta button for morning card */
 .card-title-day {
   margin: 0.5rem 0;
   padding: 5px;
@@ -87,6 +80,7 @@ section p {
   color: hsl(48, 100%, 50%);
 }
 
+/* cta button for evening card */
 .card-title-night {
   margin: 0.5rem 0;
   padding: 5px;

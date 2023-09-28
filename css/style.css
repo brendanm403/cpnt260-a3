@@ -26,7 +26,6 @@ article a:active {
   }
 }
 
-/* tony said it was okay to use pixels for this size range */
 /* media query to prevent high frequency area overlap with text */
 @media screen and (width > 407px) and (width < 673px) {
   h2 {
