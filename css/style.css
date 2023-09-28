@@ -27,7 +27,7 @@ article a:active {
 }
 
 /* tony said it was okay to use pixels for this size range */
-/* media query to prevent high density area overlap with text */
+/* media query to prevent high frequency area overlap with text */
 @media screen and (width > 407px) and (width < 673px) {
   h2 {
     font-size: 14px;
@@ -46,7 +46,7 @@ article a:active {
   }
 }
 
-/* avoids text on the high density area of background image when user is using Iphone SE (smaller margin) */
+/* avoids text on the high frequency area of background image when user is using Iphone SE */
 @media screen and (width < 408px) {
   h2 {
     font-size: 14px;
@@ -61,7 +61,7 @@ article a:active {
   }
 
   .cards-flex-container {
-    margin-top: 0.7rem;
+    padding: 0;
   }
   
   .card-text {

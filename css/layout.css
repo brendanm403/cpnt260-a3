@@ -1,51 +1,98 @@
+/**** element selectors ****/
+
+/* hero section container */
 header {
-  height: 100vh;
   background-image: url(https://picsum.photos/id/184/2000/1500);
-  background-size: cover;
   background-position: center;
+  background-size: cover;
+  
+  height: 100vh;
+  padding-bottom: 5rem;
 }
 
+/* hero title */
+h1 {
+  text-align: center;
+  
+  margin: 0 auto;
+  max-width: 18ch;
+  padding: 1rem;
+  
+  color: #fff;
+  filter: drop-shadow(0 0 1rem hsl(224, 95%, 78%));
+}
+
+/* morning and evening cards */
 article {
-  max-width: 20ch;
   background-color: transparent;
+  
+  text-align: center;
+  
+  margin: 0 1rem 1rem 1rem;
+  max-width: 20ch;
+  padding: 1rem;
+  
   border: 3px solid rgb(255, 255, 255, 0.1);
   border-radius: 1rem;
-  padding: 1rem;
-  margin: 0 1rem;
-  text-align: center;
 }
 
-h1 {
-  padding: 1rem;
-  max-width: 18ch;
+/* placeholder text to show where hero section ends */
+section h2 {
   text-align: center;
-  color: #fff;
-  margin: 0;
+  
+  margin : 1rem auto;
+  max-width: 20ch;
+
+  color: #000;
 }
+
+section p {
+  margin: auto;
+  max-width: 70ch;
+  padding: 1rem;
+  
+  color: #000;
+}
+
+/**** class selectors ****/
+
 
 .cards-flex-container {
   display: flex;
-  justify-content: center;
+  /* margin-top: 1rem; */
+  padding: 1rem 0 1rem 0;
+  
   align-items: center;
-  margin-top: 3rem;
+  justify-content: center;
 }
 
 .card-image {
   display: block;
-  width: 30%;
   margin: auto;
+  width: 30%;
 }
 
 .card-text {
-  margin: 0;
+  margin: 1rem 0;
 }
 
+/* leave comment about the contrast ratio being calced against white background even though not white" */
 .card-title-day {
+  margin: 0.5rem 0;
+  padding: 5px;
+  
+  border: 2px solid hsl(48, 100%, 50%);
+  border-radius: 1rem;
+  
   color: hsl(48, 100%, 50%);
-  margin: 0;
 }
 
 .card-title-night {
-  color: hsl(240, 100%, 72%);
-  margin: 0;
+  margin: 0.5rem 0;
+  padding: 5px;
+ 
+  border: 2px solid hsl(240, 100%, 83%);
+  border-radius: 1rem;
+ 
+  color: hsl(240, 100%, 83%);
 }
