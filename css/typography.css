@@ -12,6 +12,7 @@ h1, h2 {
   font-size: 60px;
 }
 
+/* override size, keep font family */
 h2 {
   font-size: 22px;
 }
