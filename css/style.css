@@ -1,13 +1,70 @@
-@media screen and (width > 50rem) {
-  h1 {
-    font-size: 85px;
-  }
+/* hover and link effects */
+article:hover {
+  transform: scale(1.1);
 }
 
-/* tony said it was okay to use pixels for this size range */
-@media screen and (width > 800px) and (width < 936px) {
+article a:active {
+  color: #fff;
+}
+
+.card-title-day:hover {
+  background-color: hsl(0, 0%, 0%);
+  filter: drop-shadow(0 0 5px hsl(224, 95%, 78%));
+}
+
+.card-title-night:hover {
+  background-color: hsl(0, 0%, 0%);
+  filter: drop-shadow(0 0 5px hsl(224, 95%, 78%));
+}
+
+/**** Media Queries ****/
+
+/* sets desktop heading size */
+@media screen and (width > 50rem) {
   h1 {
     font-size: 70px;
   }
 }
 
+/* tony said it was okay to use pixels for this size range */
+/* media query to prevent high density area overlap with text */
+@media screen and (width > 407px) and (width < 673px) {
+  h2 {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+  
+  .card-image {
+    display: none;
+  }
+
+  .card-text {
+    margin: 0;
+  }
+}
+
+/* avoids text on the high density area of background image when user is using Iphone SE (smaller margin) */
+@media screen and (width < 408px) {
+  h2 {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+  
+  .card-image {
+    display: none;
+  }
+
+  .cards-flex-container {
+    margin-top: 0.7rem;
+  }
+  
+  .card-text {
+    margin: 0;
+  }
+}
