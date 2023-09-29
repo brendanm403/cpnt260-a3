@@ -27,8 +27,8 @@ function nightCardCycle() {
   }
 } 
   
-setInterval(dayCardCycle, 4000);
-setInterval(nightCardCycle, 4000);
+setInterval(dayCardCycle, 5000);
+setInterval(nightCardCycle, 5000);
 
 
 
