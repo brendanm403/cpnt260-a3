@@ -27,26 +27,11 @@ article a:active {
 }
 
 /* media query to prevent high frequency area overlap with text */
-@media screen and (width > 407px) and (width < 673px) {
-  h2 {
-    font-size: 14px;
+@media screen and (width < 673px) {
+  article {
+    margin: 0 0.5rem 0 0.5rem;
   }
 
-  p {
-    font-size: 12px;
-  }
-  
-  .card-image {
-    display: none;
-  }
-
-  .card-text {
-    margin: 0;
-  }
-}
-
-/* avoids text on the high frequency area of background image when user is using Iphone SE */
-@media screen and (width < 408px) {
   h2 {
     font-size: 14px;
   }
@@ -60,7 +45,7 @@ article a:active {
   }
 
   .cards-flex-container {
-    padding: 0;
+    padding-top: 0;
   }
   
   .card-text {
